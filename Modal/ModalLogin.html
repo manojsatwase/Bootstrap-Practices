@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab" rel="stylesheet">
+	<style type="text/css">
+		.form-container{
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 10px;
+		}
+		.box-shadow{
+			box-shadow: 0px 0px 10px 0px #000;
+		}
+		body{
+		    font-family: 'Roboto Slab', sans-serif;
+            font-size: 16px;
+            color: #888;
+            font-weight: 300;
+            line-height: 30px;
+
+		}
+		.modal-content{
+			background-color: darkcyan;
+		}
+		.btn-link{
+			color:white;
+		}
+		.modal-heading h2{
+			color:#ffffff;
+		}
+
+
+	</style>
+</head>
+
+<body>
+
+	<div style="margin:100px auto;" class="text-center">
+		<a href="#openDialog" data-toggle="modal" class="btn btn-info btn-lg outline launch-modal">Show Dialog</a>
+	</div>
+
+
+	<div class="modal fade box-shadow" tabindex="-1" id="openDialog">
+		<div  class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title text-center ml-10" id="modal-register-label">Registration Your Account</h3>
+					<br>
+					
+					<a href="#" class="close" data-dismiss="modal">&times;</a>
+				</div>
+				<div class="modal-body">
+					<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-heading">
+				<h2 class="text-center">Login</h2>
+			</div>
+			<hr />
+			<div class="modal-body">
+				<form action="" role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+							<span class="glyphicon glyphicon-user"></span>
+							</span>
+							<input type="text" class="form-control" placeholder="User Name" />
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+							<span class="glyphicon glyphicon-lock"></span>
+							</span>
+							<input type="password" class="form-control" placeholder="Password" />
+
+						</div>
+
+					</div>
+
+					<div class="form-group text-center">
+						<button type="submit" class="btn btn-success btn-lg">Login</button>
+						<a href="#" class="btn btn-link">forget Password</a>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary">save</button>
+					<button class="btn btn-secondary" data-dismiss="modal">cancel</button>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	(function(){
+		// four event 
+		//1 shown  2 show 3 hidden 4 hide
+		var openDialog=$("#openDialog");
+		openDialog.on("shown.bs.modal",function(){
+			console.log("model is display")
+		})
+		openDialog.on("hidden.bs.modal",function(){
+			console.log("model is hidden")
+		})
+	})();
+</body>
+</html>
