@@ -1,0 +1,303 @@
+<!DOCTYPE html> 
+<html> 
+<head>    
+ <title>Tooltips And Alerts</title> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style type="text/css">
+     .fasion{  background-image: url("images/manoj1.jpg");  
+        }   
+      .boxed{
+          box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.4);
+          
+        }
+       button:focus{
+        outline: none;
+       }
+    
+ </style> 
+</head>
+ <body>
+    
+     
+  
+     <nav class="container">
+        <div class="navbar navbar-expand-lg navbar-light bg-light fixed-top boxed">
+        <div class="navbar-brand">
+            <a href="#"><h4>Logo</h4></a>
+        </div>
+             <button class="navbar-toggler" data-toggle="collapse"  type="button" data-toggle="collapse" data-target="#demo-navbar-collapse" >
+           <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="demo-navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href=""><i class="fa fa-heart"></i> Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Service</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+     </nav>
+     <!-- jumbotron start-->
+
+
+     <div class="jumbotron fasion">
+        <div class="container">
+            <h1 class="display-5">Hello World Jumbotron</h1>
+            <p class="lead">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+            <p><a class="btn btn-primary" href="Typography.html">Learn More...</a></p>
+                <p><a class="btn btn-success" href="Table.html">Learn More...</a></p>
+        </div>
+        
+     </div>
+  <!-- end jumbotron -->
+
+
+    <div class="page-header" style="color: #555;"> <!-- page-header star -->
+                <ol class="breadcrumb">  <!-- Breadcrumb start -->
+                    <li class="breadcrumb-item active">Home</li>
+                   <li class="breadcrumb-item"><a href="#">Course</a></li>
+
+                </ol>  <!-- Breadcrumb end-->
+
+
+         <h1>Shopping App</h1>
+         </div>  <!-- page-header end -->
+         <hr>
+   
+
+       <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-info" data-toggle="modal" data-target="#openDialog">
+  Show Dialog
+</button> -->
+
+
+
+
+
+<!-- Alert Box start -->
+ 
+<div class="alert alert-success alert-dismissible  collapse" id="fistAlert" >
+  <p>This is an alert to alert you that something is worng</p>
+  <a href="#" data-dismiss="alert" class="close">&times;</a>
+ 
+</div>  <!-- Alert Box end -->
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-2">
+
+<ul class="nav nav-tabs nav-pills nav-justified p-3" id="">
+  <li class="nav-item">
+    <a class="nav-link active" id="" data-toggle="tab" href="#tab-one" >Tab One</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="" data-toggle="tab" href="#tab-two" >Tab Two</a>
+  </li>
+</ul>
+<div class="tab-content" id="">
+  <div class="tab-pane fade show active alert alert-secondary" id="tab-one" >
+    <p class="text-justify">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+  </div>
+  <div class="tab-pane fade alert alert-success" id="tab-two" >
+                       
+   <form class="form-horizontal col-md-10" id="loginForm">
+      <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label ">Email</label>
+      <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+                 <!-- Button groups -->
+  <div class="form-group row">
+
+
+<!--  Button Dropdown as Select Box start -->
+ <div class="form-group row">
+  <label class="control-label col-sm-5">Pick a Premium Course</label>
+  <div class="dropdown col-sm-7">
+  <button class="btn btn-success" id="selectButton">Choose a course...</button>
+  <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <div class="dropdown-menu" id="courseDropdown">
+    <a class="dropdown-item" href="#">ANGULAR JS</a>
+    <a class="dropdown-item" href="#">BOOTSRAP 4</a>
+    <a class="dropdown-item" href="#">ANDROID</a>
+   <!--  <div class="dropdown-divider"></div>
+    <a class="dropdown-item disabled" href="#">React JS</a>
+  </div> -->
+</div>
+</div>
+</div>
+</div>  <!--  Button Dropdown as Select Box end -->
+
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary"
+       title="<img src='../images/mentie.jpg' class='img-thumbnail' /> " data-html="true" 
+      >Sign in</button>  <!-- Tooltip -->
+    </div>
+  </div>
+  </form>  <!-- form end -->
+ </div>
+
+</div>
+
+</div>
+</div>
+
+
+<br><br>
+<hr>
+<br><br>
+
+
+
+
+
+
+<!-- modal  start -->
+<div class="modal fade" id="openDialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Hello Modal title</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <p>This is my first modal... Hurray!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="saveButton">Save</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div> <!-- modal end -->
+
+<hr>
+
+
+
+
+
+
+    
+<script type="text/javascript" src="server.js"></script>
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript">
+   
+   /* button Event  */
+
+   (function (){
+   	/*choice course button*/
+    var openDialog=$("#openDialog");
+    var selectButton=$("#selectButton");
+    $("#courseDropdown a").on("click",function(){
+      var selection=$(this).text();
+
+       selectButton.text(selection);
+
+       openDialog.modal();
+    });
+     
+    /*Modal Start*/
+    openDialog.on("shown.bs.modal",function(){
+        console.log("modal is displayed");
+    });
+    openDialog.on("hidden.bs.modal",function(){
+        console.log("modal is hidden");
+    });  /*Modal end*/
+   
+   /*tooltip start*/
+   $("#loginForm button").tooltip({
+   	placement:"top",
+   	delay:{
+   		show:500,
+   		hide:300
+   	}
+   });   /*tooltip  end*/
+
+
+/*alrt box start*/
+
+  var fistAlert=$("#fistAlert");
+  fistAlert.on("close.bs.alert",function(){
+  	fistAlert.hide();
+  	return false;
+  });
+
+  $("#saveButton").on("click",function(){
+  	fistAlert.show();
+  }); /*alrt box end*/
+
+
+
+   })();
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
