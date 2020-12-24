@@ -1,0 +1,197 @@
+<!DOCTYPE html> <html> <head>     <title>Button Dropdown as selectbox</title> 
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    	<style type="text/css">
+     .fasion{  background-image: url("images/manoj1.jpg");  
+        }   
+      .boxed{
+          box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.4);
+          
+        }
+       
+ </style> 
+</head>
+ <body>
+    
+     
+  
+     <nav class="container">
+     	<div class="navbar navbar-expand-lg navbar-light bg-light fixed-top boxed">
+     	<div class="navbar-brand">
+     		<a href="#"><h4>Logo</h4></a>
+     	</div>
+     		 <button class="navbar-toggler" data-toggle="collapse"  type="button" data-toggle="collapse" data-target="#demo-navbar-collapse" >
+           <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="demo-navbar-collapse">
+            	<ul class="navbar-nav ml-auto">
+            		<li class="nav-item active">
+            			<a class="nav-link" href=""><i class="fa fa-heart"></i> Home<span class="sr-only">(current)</span></a>
+            		</li>
+            		<li class="nav-item">
+            			<a class="nav-link" href="">About</a>
+            		</li>
+            		<li class="nav-item">
+            			<a class="nav-link" href="">Service</a>
+            		</li>
+            	</ul>
+            	
+            </div>
+     	</div>
+     </nav>
+     <!-- jumbotron start-->
+
+
+     <div class="jumbotron fasion">
+     	<div class="container">
+     		<h1 class="display-5">Hello World Jumbotron</h1>
+     		<p class="lead">
+     			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+     		</p>
+     		<p><a class="btn btn-primary" href="Typography.html">Learn More...</a></p>
+     			<p><a class="btn btn-success" href="Table.html">Learn More...</a></p>
+     	</div>
+     	
+     </div>
+  <!-- end jumbotron -->
+
+
+    <div class="page-header" style="color: #555;"> <!-- page-header star -->
+                <ol class="breadcrumb">  <!-- Breadcrumb start -->
+                    <li class="breadcrumb-item active">Home</li>
+                   <li class="breadcrumb-item"><a href="#">Course</a></li>
+
+                </ol>  <!-- Breadcrumb end-->
+
+
+         <h1>Shopping App</h1>
+         </div>  <!-- page-header end -->
+         <hr>
+
+        
+
+
+    <div class="container">
+    	<div class="row">
+            
+    		
+    			
+    		<form class="form-horizontal col-md-10">
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label ">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+                 <!-- Button groups -->
+  <div class="form-group row">
+         <!--
+            <label class="control-label col-sm-3">Fovorite course</label>
+            <div class="col-sm-9">
+          <div class="btn btn-group btn-group-sm " role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-success">HTML/CSS</button>
+         <button type="button" class="btn btn-success">JAVASCRIPT</button>
+        <button type="button" class="btn btn-success">BOOTSRAP</button> -->
+     
+    <!-- Dropdown menu start -->
+      <!-- <div class="btn-group btn-group-sm ml-1">
+         <button class="btn btn-success " type="button" id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">
+      More
+  </button>
+<button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+	<span class="caret"></span>
+</button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">PHP</a>
+    <a class="dropdown-item" href="#">Android</a>
+    <a class="dropdown-item" href="#">Java</a>
+    </div>
+  </div>
+ </div>  --> <!-- dropdown-toggle end -->
+
+
+
+<!--  Button Dropdown as Select Box start -->
+ <div class="form-group row">
+  <label class="control-label col-sm-5">Pick a Premium Course</label>
+  <div class="dropdown col-sm-7">
+  <button class="btn btn-success" id="selectButton">Choose a course...</button>
+  <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <div class="dropdown-menu" id="courseDropdown">
+    <a class="dropdown-item" href="#">ANGULAR JS</a>
+    <a class="dropdown-item" href="#">BOOTSRAP 4</a>
+    <a class="dropdown-item" href="#">ANDROID</a>
+   <!--  <div class="dropdown-divider"></div>
+    <a class="dropdown-item disabled" href="#">React JS</a>
+  </div> -->
+</div>
+</div>
+</div>
+</div>  <!--  Button Dropdown as Select Box end -->
+
+
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </div>
+  </form>
+    		</div>
+    	</div>
+    	
+    </div>
+
+<hr>
+
+
+    
+<script type="text/javascript" src="server.js"></script>
+	
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript">
+   
+   (function (){
+    var selectButton=$("#selectButton");
+    $("#courseDropdown a").on("click",function(){
+      var selection=$(this).text();
+       selectButton.text(selection);
+    })
+   })();
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
