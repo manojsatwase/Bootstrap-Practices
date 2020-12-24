@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Return Met Product</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: #202629;
+        font-size: 1rm;
+      }
+      .form-Box {
+        padding: 10px;
+        margin: 100px auto;
+        background-size: cover;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+          0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+      }
+      .form-heading {
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        color: red;
+      }
+      #form-control {
+        width: 100%;
+        outline: none;
+        height: 35px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding-left: 20px;
+      }
+      .msg {
+        outline: none;
+        border: 1px solid #ddd;
+        width: 100%;
+        height: 120px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 form-Box">
+          <div class="form-heading">
+            <h2>Return Met product form Information Fill</h2>
+          </div>
+          <div class="form-group col-md-8 offset-2">
+            <input
+              id="form-control"
+              type="text"
+              name=""
+              placeholder="Full Name Of Identity"
+              id="name_of_identity"
+            />
+          </div>
+          <div class="form-group col-md-8 offset-2">
+            <select name="state" class="selectpicker" id="form-control">
+              <option value=" ">Please select your county</option>
+              <option>Alabama</option>
+              <option>Alaska</option>
+              <option>Arizona</option>
+              <option>Arkansas</option>
+              <option>California</option>
+              <option>Colorado</option>
+              <option>Connecticut</option>
+              <option>Delaware</option>
+              <option>District of Columbia</option>
+              <option> Florida</option>
+              <option>Georgia</option>
+              <option>Hawaii</option>
+              <option>daho</option>
+              <option>Illinois</option>
+              <option>Indiana</option>
+              <option>Iowa</option>
+              <option> Kansas</option>
+              <option>Kentucky</option>
+              <option>Louisiana</option>
+              <option>Maine</option>
+              <option>Maryland</option>
+              <option> Mass</option>
+              <option>Michigan</option>
+              <option>Minnesota</option>
+              <option>Mississippi</option>
+              <option>Missouri</option>
+              <option>Montana</option>
+              <option>Nebraska</option>
+              <option>Nevada</option>
+              <option>New Hampshire</option>
+              <option>New Jersey</option>
+              <option>New Mexico</option>
+              <option>New York</option>
+              <option>North Carolina</option>
+              <option>North Dakota</option>
+              <option>Ohio</option>
+              <option>Oklahoma</option>
+              <option>Oregon</option>
+              <option>Pennsylvania</option>
+              <option>Rhode Island</option>
+              <option>South Carolina</option>
+              <option>South Dakota</option>
+              <option>Tennessee</option>
+              <option>Texas</option>
+              <option> Uttah</option>
+              <option>Vermont</option>
+              <option>Virginia</option>
+              <option>Washington</option>
+              <option>West Virginia</option>
+              <option>Wisconsin</option>
+              <option>Wyoming</option>
+            </select>
+          </div>
+          <div class="form-group col-md-8 offset-2">
+            <input type="text" id="form-control" name="" placeholder="state" />
+          </div>
+          <div class="form-group col-md-8 offset-2">
+            <input type="text" id="form-control" name="" placeholder="place" />
+          </div>
+
+          <div class="form-group col-md-8 offset-2">
+            <select name="state" class="selectpicker" id="form-control">
+              <option value=" ">Please select your product OR document </option>
+              <option>Alabama</option>
+              <option>Alaska</option>
+              <option>Arizona</option>
+              <option>Arkansas</option>
+              <option>California</option>
+              <option>Colorado</option>
+              <option>Connecticut</option>
+              <option>Delaware</option>
+              <option>District of Columbia</option>
+              <option> Florida</option>
+              <option>Georgia</option>
+              <option>Hawaii</option>
+              <option>daho</option>
+              <option>Illinois</option>
+              <option>Indiana</option>
+              <option>Iowa</option>
+              <option> Kansas</option>
+              <option>Kentucky</option>
+              <option>Louisiana</option>
+              <option>Maine</option>
+              <option>Maryland</option>
+              <option> Mass</option>
+              <option>Michigan</option>
+              <option>Minnesota</option>
+              <option>Mississippi</option>
+              <option>Missouri</option>
+              <option>Montana</option>
+              <option>Nebraska</option>
+              <option>Nevada</option>
+              <option>New Hampshire</option>
+              <option>New Jersey</option>
+              <option>New Mexico</option>
+              <option>New York</option>
+              <option>North Carolina</option>
+              <option>North Dakota</option>
+              <option>Ohio</option>
+              <option>Oklahoma</option>
+              <option>Oregon</option>
+              <option>Pennsylvania</option>
+              <option>Rhode Island</option>
+              <option>South Carolina</option>
+              <option>South Dakota</option>
+              <option>Tennessee</option>
+              <option>Texas</option>
+              <option> Uttah</option>
+              <option>Vermont</option>
+              <option>Virginia</option>
+              <option>Washington</option>
+              <option>West Virginia</option>
+              <option>Wisconsin</option>
+              <option>Wyoming</option>
+            </select>
+          </div>
+          <div class="form-group col-md-8 offset-2">
+            <textarea class="msg" placeholder="Item Description"></textarea>
+          </div>
+          <div class="form-group col-md-8 offset-2">
+            <input
+              type="text"
+              id="form-control"
+              name=""
+              placeholder="Email Id"
+            />
+          </div>
+          <div class="form-group col-md-8 offset-2">
+            <input
+              type="text"
+              id="form-control"
+              name=""
+              placeholder="Mobile No"
+            />
+          </div>
+          <div class="custom-file col-md-8 offset-2">
+            <input
+              type="file"
+              class="custom-file-input"
+              id="validatedCustomFile"
+              required
+            />
+            <label class="custom-file-label" for="validatedCustomFile"
+              >Choose file...</label
+            >
+            <div class="invalid-feedback">
+              Example invalid custom file feedback
+            </div>
+          </div>
+
+          <div class="col-md-9 offset-2 " style="padding: 10px 50px;">
+            <input
+              type="button"
+              class="btn btn-primary"
+              name=""
+              value="submit"
+            />
+            <input
+              type="reset"
+              class="btn btn-secondary"
+              name=""
+              value="reset"
+            />
+          </div>
+
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
