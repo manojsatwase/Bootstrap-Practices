@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.1.1/css/bootstrap.min.css">
+	<style type="text/css">
+		.fashion{
+			background-image: url("slide_demo1.png");
+			height: 350px;
+
+		
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark " >
+      <a class="navbar-brand" href="#">MywebSite.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Demo-nav-collapse" aria-controls="Demo-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="Demo-nav-collapse">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item ">
+            <a class="nav-link " href="index.html">Index <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " href="#">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+		
+	</header>
+
+
+	 <div class="jumbotron fashion ">
+	 	  <div class="container">
+		<!-- <h1 class="">Hello World</h1>
+		 <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+	     book.</p> -->
+	     <p style="margin-top:180px;"><a href="index.html" class="btn btn-primary">Learn more...</a></p>
+	      <p><a href="#" class="btn btn-success">Learn more...</a></p>
+	 </div>
+	</div>
+
+	<!--  -->
+
+	  <!-- Page Header and  breadcrumb-->
+   <div class="page-header">
+	  	<h1>Shoping App</h1>
+	  	<ol class="breadcrumb ">
+	  		<li class="breadcrumb-item"><a href="index.html">Index</a></li>
+	  		<li class="breadcrumb-item active">Home</li>
+	  	</ol>
+   
+      </div>
+
+
+
+    
+
+
+
+	<div class="container">
+		<div class="row">
+	<table class="table table-striped table-condensed table-hover table-bordered bg-dark text-white text-center" >
+		<thead>
+			<tr class="">
+			<th>column 1</th>
+			<th>column 2</th>
+			<th>column 3</th>
+			<th>column 4</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr class="success text-black">
+			<td>value 1</td>
+			<td>value 2</td>
+			<td>value 3</td>
+			<td>value 4</td>
+			</tr>
+			<tr class="danger">
+			<td>value 1</td>
+			<td>value 2</td>
+			<td>value 3</td>
+			<td>value 4</td>
+			</tr>
+			<tr class="warning">
+			<td>value 1</td>
+			<td>value 2</td>
+			<td>value 3</td>
+			<td>value 4</td>
+			</tr>
+			<tr class="danger">
+			<td>value 1</td>
+			<td>value 2</td>
+			<td>value 3</td>
+			<td>value 4</td>
+			</tr>
+		</tbody>
+		
+	</table>
+</div>
+</div>
+
+<section>
+<div class="container">
+	<div class="row">
+		     
+		
+   			<form class="col-md-6 offset-md-3 form-control bg-dark text-white" id="loginForm">
+   				<h4 class="text-center">Log_In Form</h4>
+   				<div class="form-group">
+   					<label for="username">username</label>
+   					<input class="form-control" type="text" name="">
+   				</div>
+   				<div class="form-group">
+   					<label for="username">password</label>
+   					<input class="form-control" type="password" name="">
+   				</div>
+   				<div class="form-group">
+   					<label><input class="" type="checkbox" name=""> Remember Me</label>
+   					
+   				</div>
+   				<div class="form-group">
+
+
+   					<!-- TOOLTIP -->
+
+
+   					<button class="btn btn-primary" type="submit" title="click here,its tooltip"   data-toggle="tooltip">Log In</button>
+   					<button class="btn btn-danger" type="reset">reset</button>
+   				</div>
+   				
+   			</form>
+    
+     </div>
+	</div>
+   </div>
+</div>
+</section>
+
+      <div>
+    	<a class="btn btn-primary" href="#openDialog" data-toggle="modal">show Dialog</a>
+    </div>
+
+
+<!-- Modal -->
+
+		
+<div class="modal fade" tabindex="-1" id="openDialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h3>Hello modal Title</h3>
+			<a href="#" class="close" data-dismiss="modal">&times;</a>
+			
+		</div>
+		<div class="modal-body">
+			<p>This is my first modal...Hurray!</p>
+
+			
+		</div>
+
+		<div class="modal-footer">
+
+		<button class="btn btn-primary">Save</button>
+		<button class="btn btn-success" data-dismiss="modal">Cancel</button>
+
+        </div>
+	 </div>
+	</div>
+	</div>
+</section>
+
+<!-- TAB PANEL -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10">
+				<ul class="nav nav-tabs nav-justified" role="tablist">
+					<li class="nav-item active"><a class="nav-link " href="#tab-one" data-toggle="tab" role="tab">Tab one</a></li>
+					<li class="nav-item"><a class="nav-link" href="#tab-two" data-toggle="tab" role="tab">Tab Two</a></li>
+				</ul>
+				<div class="tab-content">
+				<div class="tab-pane active" id="tab-one">
+					<p class="well text-justify lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+				</div>
+             <div class="tab-pane" id="tab-two">
+             	<form class="col-md-8 offset-md-3 form-control bg-dark text-white">
+   				<h4 class="text-center">Log_In Form</h4>
+   				<div class="form-group">
+   					<label for="username">username</label>
+   					<input class="form-control" type="text" name="">
+   				</div>
+   				<div class="form-group">
+   					<label for="username">password</label>
+   					<input class="form-control" type="password" name="">
+   				</div>
+   				<div class="form-group">
+   					<label><input class="" type="checkbox" name=""> Remember Me</label>
+   					
+   				</div>
+   				<div class="form-group">
+   					
+   					<button class="btn btn-primary" type="submit">Log In</button>
+   					<button class="btn btn-danger" type="reset">reset</button>
+   				</div>
+   				
+   			</form>
+    
+
+             </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+
+<p style="margin-bottom:100px;"></p>
+
+
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+ <script src="bootstrap-4.1.1/js/bootstrap.min.js"></script>
+	 <script type="text/javascript">
+      
+      (function (){
+      	var openDialog = $("#openDialog");
+
+      	var selectButton = $("#selectButton");
+      	$("#homeDropdown li a").on("click",function(){
+      		var selection.text(selection);
+      		openDialog.modal();
+
+      	});
+      	   openDialog.on("shown.bs.modal",function(){
+     	console.log("Modal is displayed");
+     })
+     openDialog.on("hidden.bs.modal",function(){
+     	console.log("modal is hidden");
+
+      })
+     $("#loginForm button").tooltip();
+
+ })();
+
+
+
+</script>
+
+	
+	 </body>
+	 </html>
