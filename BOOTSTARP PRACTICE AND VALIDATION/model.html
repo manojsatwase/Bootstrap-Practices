@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="modal fade" tabindex="-1" id="opendialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2>Log In</h2>
+                <a href="#" data-dismiss="modal" class="close">&times;</a>
+              </div>
+              <div class="modal-body">
+                <form action="home.html" method="POST" id="form">
+                  <div class="form-group">
+                    <label for="username">username</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="username"
+                      placeholder="username"
+                      name="username"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">password</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="password"
+                      placeholder="password"
+                      name="password"
+                    />
+                  </div>
+                  <input
+                    type="submit"
+                    class="btn btn-primary"
+                    value="Log In"
+                    id="formSubmit"
+                  />
+                  <div id="msg"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#opendialog" data-toggle="modal" class="btn btn-info"
+      >show modal</a
+    >
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var form = document.getElementById("form");
+      var username = document.getElementById("username");
+      var password = document.getElementById("password");
+      var msg = document.getElementById("msg");
+      form.addEventListener("submit", function(e) {
+        let message = [];
+        msg.style.color = "red";
+        if (
+          username.value === "" ||
+          username.value === null ||
+          password.value === "" ||
+          password.value === null
+        ) {
+          message.push("username and password required");
+        }
+
+        if (username.value.length <= 2) {
+          message.push("username should be longer than 3 character");
+        } else if (password.value.length <= 6) {
+          message.push("password should be longer than 6 character");
+        } else if (password.value.length >= 20) {
+          message.push("password must be less than 20 character");
+        } else if (password.value === "password") {
+          message.push("password can not be password");
+        }
+        if (message.length > 0) {
+          e.preventDefault();
+          msg.innerText = message.join(" , ");
+        }
+      });
+    </script>
+  </body>
+</html>
